@@ -1,7 +1,23 @@
-<div x-data="{open: false}">
-  <button class="bg-red-400 p-8" @click="open = !open">TOGGLE OPEN</button>
-  <div x-bind:class="open ? '' : 'hidden'">X-BIND:CLASS</div>
-  <div x-show="open">X-SHOW</div>
+<div class="space-y-12">
+  <div>
+    <p>Alpine.js</p>
+
+    <div x-data="{open: false}">
+      <button class="bg-red-400 p-8" @click="open = !open">TOGGLE OPEN</button>
+      <div x-bind:class="open ? '' : 'hidden'">X-BIND:CLASS</div>
+      <div x-show="open">X-SHOW</div>
+    </div>
+
+  </div>
+
+  <div>
+    <p>Hyperscript</p>
+    
+    <div>
+      <button class=" bg-blue-400 p-8" id="button">TOGGLE OPEN</button>
+      <div class="hidden" _="on click from #button toggle .hidden">HYPERSCRIPT</div>
+    </div>
+  </div>
 </div>
 
 <div class="mx-auto md:w-2/3 w-full flex">
