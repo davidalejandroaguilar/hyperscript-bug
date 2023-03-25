@@ -1,3 +1,9 @@
+<div x-data="{open: false}">
+  <button class="bg-red-400 p-8" @click="open = !open">TOGGLE OPEN</button>
+  <div x-bind:class="open ? '' : 'hidden'">X-BIND:CLASS</div>
+  <div x-show="open">X-SHOW</div>
+</div>
+
 <div class="mx-auto md:w-2/3 w-full flex">
   <div class="mx-auto">
     <% if notice.present? %>
